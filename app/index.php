@@ -22,12 +22,10 @@
       <a href="/">
         <h1>Rake</h1>
       </a>
-     <p style="color: rgb(240,55,165); font-weight: bold;">Prototype wireframes</p>
-     <p>
-       <a href="bootstrap.php">
-        with bootstrap Elements
-       </a>
-     </p>
+     <p><span style="color: rgb(240,55,165); font-weight: bold;">Prototype wireframes</span> <a href="bootstrap.php">
+         with Bootstrap elements
+        </a>
+      </p>
   </header>
 
   <main class="main">
@@ -40,36 +38,16 @@
     </div>
 
     <aside id="right" class="components">
-
+        <p><b>Hint:</b> You can edit any text. Use escape key to accept changes.</p>
         <div class="components__controls">
+          <button id="img-download" class="btn btn-default">Snapshot Prototype</button>
           <button type="button" class="btn-reset">Destroy Prototype</button>
         </div>
 
-        <div class="item" data-elem="jumbotron">
-          <div class="item__description" >
-            Jumbo Tron
-          </div>
-        </div>
-        <div class="item" data-elem="navbar">
-          <div class="item__description" >
-            Navbar
-          </div>
-        </div>
-        <div class="item" data-elem="breadcrumb">
-          <div class="item__description" >
-            Breadcrumb
-          </div>
-        </div>
-        <div class="item" data-elem="pagination">
-          <div class="item__description" >
-            Pagination
-          </div>
-        </div>
-        <div class="item" data-elem="table">
-          <div class="item__description" >
-            Table
-          </div>
-        </div>
+        <!--
+            drag and drop buttons will be programmatically added here based
+            on the templates in bootstrap.php
+          -->
 
     </aside>
     </div>
@@ -77,5 +55,10 @@
 
 </div>
 <script async src="javascripts/dist/app.js"></script>
+
+<!-- for downloading an image-->
+<div class="holder-div container" style="overflow:visible;">
+
+</div>
 </body>
 </html>
